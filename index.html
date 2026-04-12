@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معسكر بادر - نادي مهارات المستقبل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #093675;
+            --dark-navy: #1F253D;
+            --gold-light: #FFCA45;
+            --gold-deep: #FFBD59;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fcfcfc;
+        }
+        .bg-primary { background-color: var(--primary-blue); }
+        .bg-navy { background-color: var(--dark-navy); }
+        .bg-gold { background-color: var(--gold-light); }
+        .text-primary { color: var(--primary-blue); }
+        .text-gold { color: var(--gold-light); }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--primary-blue) 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(7, 65, 145, 0.15);
+        }
+
+        .timeline-step {
+            position: relative;
+        }
+        .timeline-step::after {
+            content: '';
+            position: absolute;
+            top: 2.5rem;
+            bottom: -2.5rem;
+            right: 1.5rem;
+            width: 3px;
+            background: var(--gold-light);
+            z-index: 0;
+        }
+        .timeline-step:last-child::after { display: none; }
+
+        .btn-animate {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .btn-animate:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--gold-light);
+        }
+    </style>
+</head>
+<body class="text-gray-800 leading-relaxed">
+
+    
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 px-6 relative overflow-hidden text-center">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full mb-8 border border-white/20">
+                <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
+                <span class="text-sm font-bold tracking-wide">نادي مهارات المستقبل يقدم</span>
+            </div>
+            <h2 class="text-6xl md:text-8xl font-black mb-6 text-white drop-shadow-lg">معسكر بادر</h2>
+            <p class="text-2xl md:text-3xl text-gold font-bold mb-10 italic opacity-90">
+                هنا تبدأ الرحلة.. مهارات اليوم، مستقبل الغد
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#schedule" class="bg-gold text-navy font-black px-12 py-5 rounded-2xl btn-animate shadow-xl text-lg">استكشف الخطة (٤ أيام)</a>
+                <a href="#opportunity" class="border-2 border-white/40 text-white font-bold px-12 py-5 rounded-2xl hover:bg-white hover:text-primary transition-all backdrop-blur-sm text-lg">سجل الان</a>
+            </div>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold opacity-10 blur-3xl rounded-full -mr-20 -mt-20"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-5 blur-3xl rounded-full -ml-20 -mb-20"></div>
+    </section>
+
+    
+    <!-- my section -->
+     <section id="schedule" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-black text-primary mb-4">عن المعسكر</h3>
+                <div class="w-24 h-2 bg-gold mx-auto rounded-full"></div>
+                <br>
+                <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                        معسكر تدريبي مكثف لمدة أربعة أيام، يهدف إلى تطوير مهارات العمل التطوعي من خلال تجربة عملية وتطبيقات واقعية.
+                </p>
+                <div class="grid grid-cols-30 gap-4">
+                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-100">
+                            <i data-lucide="calendar" class="text-[#074191] mb-2"></i>
+                            <h4 class="font-bold">4 أيام | يبدأ المعسكر 16 أبريل | يقام عن بُعد</h4>
+                            
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+            <h3 class="text-4xl font-black text-primary mb-4">ماذا ستستفيد من المعسكر؟</h3>
+                <div class="w-24 h-2 bg-gold mx-auto rounded-full"></div>
+                <br>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <i data-lucide="check-circle" class="text-[#074191] w-8 h-8 mb-4"></i>
+                    <p class="text-gray-700 font-semibold leading-relaxed">اكتساب فهم عميق لمفهوم العمل التطوعي وأهميته</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <i data-lucide="check-circle" class="text-[#074191] w-8 h-8 mb-4"></i>
+                    <p class="text-gray-700 font-semibold leading-relaxed">تطوير مهارات العمل الجماعي والتواصل</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <i data-lucide="check-circle" class="text-[#074191] w-8 h-8 mb-4"></i>
+                    <p class="text-gray-700 font-semibold leading-relaxed">تعزيز القدرة على تحمل المسؤولية والمبادرة</p>
+                </div>
+                <br>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-black text-primary mb-4">الجدول الزمني</h3>
+                <div class="w-24 h-2 bg-gold mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Day 1 -->
+                <div class="timeline-step flex gap-8 items-start">
+                    <div class="bg-primary text-white w-14 h-14 rounded-2xl flex-shrink-0 flex items-center justify-center font-black text-xl z-10 shadow-xl transform rotate-3">١</div>
+                    <div class="bg-gray-50 p-8 rounded-3xl shadow-sm border-r-8 border-primary flex-grow card-hover transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-2xl font-bold text-primary">ماهية التطوع وأقسامه</h4>
+                            <span class="bg-blue-100 text-primary text-xs font-bold px-3 py-1 rounded-lg">اليوم الأول</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 font-medium">التعرف على مفهوم التطوع الحديث، واستعراض مجالاته المختلفة (البيئي، التقني، الصحي، والاجتماعي).</p>
+                        <!-- <div class="bg-white p-5 rounded-2xl border border-dashed border-primary/30">
+                            <h5 class="text-sm font-black text-primary uppercase mb-2">النشاط التفاعلي:</h5>
+                            <p class="text-gray-700 italic">"دراسة حالات واقعية لمشاكل مجتمعية واقتراح الحل التطوعي الأنسب لكل منها، مع تحديد القسم المناسب."</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="timeline-step flex gap-8 items-start">
+                    <div class="bg-primary text-white w-14 h-14 rounded-2xl flex-shrink-0 flex items-center justify-center font-black text-xl z-10 shadow-xl transform -rotate-3">٢</div>
+                    <div class="bg-gray-50 p-8 rounded-3xl shadow-sm border-r-8 border-primary flex-grow card-hover transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-2xl font-bold text-primary">أثر التطوع على الفرد</h4>
+                            <span class="bg-blue-100 text-primary text-xs font-bold px-3 py-1 rounded-lg">اليوم الثاني</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 font-medium">كيف يغيرك التطوع؟ التركيز على المهارات الناعمة (Soft Skills) مثل القيادة، التواصل، والذكاء العاطفي.</p>
+                        <!-- <div class="bg-white p-5 rounded-2xl border border-dashed border-primary/30">
+                            <h5 class="text-sm font-black text-primary uppercase mb-2">النشاط التفاعلي:</h5>
+                            <p class="text-gray-700 italic">"مختبر المهارات: تمثيل أدوار لقياديين في فرق تطوعية يواجهون تحديات في إدارة فرقهم."</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="timeline-step flex gap-8 items-start">
+                    <div class="bg-primary text-white w-14 h-14 rounded-2xl flex-shrink-0 flex items-center justify-center font-black text-xl z-10 shadow-xl transform rotate-3">٣</div>
+                    <div class="bg-gray-50 p-8 rounded-3xl shadow-sm border-r-8 border-primary flex-grow card-hover transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-2xl font-bold text-primary">المجتمع والرؤية</h4>
+                            <span class="bg-blue-100 text-primary text-xs font-bold px-3 py-1 rounded-lg">اليوم الثالث</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 font-medium">أثر التطوع المستدام على تنمية المجتمع وكيف يتقاطع ذلك مع مستهدفات رؤية المملكة 2030.</p>
+                        <!-- <div class="bg-white p-5 rounded-2xl border border-dashed border-primary/30">
+                            <h5 class="text-sm font-black text-primary uppercase mb-2">النشاط التفاعلي:</h5>
+                            <p class="text-gray-700 italic">"تصميم مبادرة مستدامة: ورشة عمل لابتكار مشروع تطوعي يخدم الجامعة ويحقق الاستمرارية."</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="timeline-step flex gap-8 items-start">
+                    <div class="bg-gold text-navy w-14 h-14 rounded-2xl flex-shrink-0 flex items-center justify-center font-black text-xl z-10 shadow-xl ring-4 ring-white animate-bounce">٤</div>
+                    <div class="bg-navy p-8 rounded-3xl shadow-2xl border-r-8 border-gold flex-grow text-white">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-2xl font-bold text-gold">إعلان الفرصة التطوعية</h4>
+                            <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-lg">اليوم الأخير</span>
+                        </div>
+                        <p class="text-blue-100 mb-6 font-medium">الختام والجانب العملي الميداني. تحويل كل ما تعلمناه إلى واقع ملموس في أكبر حدث بالجامعة.</p>
+                        <!-- <div class="bg-white/10 p-5 rounded-2xl border border-white/20 backdrop-blur-sm">
+                            <h5 class="text-sm font-black text-gold uppercase mb-2">الحدث المرتقب:</h5>
+                            <p class="text-white font-bold italic">"عرض تفصيلي للمشاركة في تنظيم حفل التخرج القادم وفتح باب التسجيل الفوري للحاضرين."</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-16 px-6 border-t-8 border-gold">
+        <div class="max-w-4xl mx-auto text-center">
+            <h4 class="text-gold font-black text-2xl mb-4">نادي مهارات المستقبل</h4>
+            <p class="text-blue-200 font-bold text-lg mb-8 italic">هنا تبدأ الرحلة.. مهارات اليوم، مستقبل الغد</p>
+            <div class="w-16 h-1 bg-gold/30 mx-auto mb-8"></div>
+            <div class="flex justify-center gap-10 text-sm font-bold opacity-60">
+                <span>جامعة جازان</span>
+                <span>عمادة شؤون الطلاب</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
