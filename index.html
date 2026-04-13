@@ -54,6 +54,64 @@
             transform: scale(1.05);
             box-shadow: 0 0 20px var(--gold-light);
         }
+             /* ترويسة الشعارات */
+        .logos-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 30px 0;
+            flex-direction: row; 
+        }
+
+        .left-line {
+            height: 3px;
+            background-color: var(--gold-light);
+            flex: 1; 
+        }
+
+        .logos-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-right: 40px;
+            padding-left: 20px;
+        }
+
+        .mini-logo {
+            width: 55px;
+            height: 55px;
+            background: #fdfdfd;
+            border: 1px solid #f1f5f9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+            color: #94a3b8;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .yellow-divider {
+            width: 2px;
+            height: 30px;
+            background-color: var(--gold-light);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--primary-blue) 100%);
+        }
+
+        .info-card {
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold-light);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
     </style>
 </head>
 <body class="text-gray-800 leading-relaxed">
@@ -81,7 +139,18 @@
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-5 blur-3xl rounded-full -ml-20 -mb-20"></div>
     </section>
 
-    
+      <!-- قسم الشعارات -->
+    <div class="logos-container">
+        <div class="left-line"></div>
+        <div class="logos-wrapper">
+            <div class="mini-logo">شعار<br>الجامعة</div>
+            <div class="yellow-divider"></div>
+            <div class="mini-logo">شعار<br>الشؤون</div>
+            <div class="yellow-divider"></div>
+            <div class="mini-logo">شعار<br>النادي</div>
+        </div>
+    </div>
+
     <!-- my section -->
      <section id="schedule" class="py-24 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
@@ -125,6 +194,54 @@
                 </div>
                 <br>
             </div>
+            </div>
+        </div>
+    </section>
+ <section class="py-12 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- بطاقة الموقع (حضوري) -->
+                <div class="info-card bg-gray-50 p-8 rounded-[2rem] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 bg-primary text-white px-6 py-2 rounded-br-2xl font-bold text-sm">حضوري</div>
+                    <h3 class="text-2xl font-black text-primary mb-6 flex items-center gap-3">
+                        <span class="text-3xl">📍</span> مقر المعسكر
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 font-bold text-primary">الطلاب</div>
+                            <p class="text-gray-600 font-medium pt-2">كلية الهندسة وعلوم الحاسب</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 font-bold text-pink-600">الطالبات</div>
+                            <p class="text-gray-600 font-medium pt-2">قاعة عمادة شؤون الطلاب (مجمع محلية)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة المدة الزمنية -->
+                <div class="info-card bg-navy p-8 rounded-[2rem] text-white">
+                    <h3 class="text-2xl font-black text-gold mb-6 flex items-center gap-3">
+                        <span class="text-3xl">⏳</span> مدة المعسكر
+                    </h3>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-6">
+                            <div class="text-5xl font-black text-white">12</div>
+                            <div class="text-gold font-bold text-lg leading-tight">يوماً من<br>التأثير</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/10 p-4 rounded-2xl border border-white/10">
+                                <span class="block text-2xl font-black text-gold">3</span>
+                                <span class="text-sm opacity-80">أيام تدريبية</span>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-2xl border border-white/10">
+                                <span class="block text-2xl font-black text-gold">9</span>
+                                <span class="text-sm opacity-80">أيام تطبيق ميداني</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
